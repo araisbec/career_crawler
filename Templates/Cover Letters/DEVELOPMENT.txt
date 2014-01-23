@@ -1,0 +1,23 @@
+Andrew Raisbeck
+363 Salisbury Lane
+Newmarket, Ontario
+L3Y8A4
+<DATE>
+
+<COMPANY_NAME> 
+<COMPANY_ADDRESS>
+<COMPANY_CITY>, <COMPANY_PROVINCE>
+<COMPANY_POSTAL_CODE>
+
+To Whom It May Concern:
+
+I would like to apply for <POSITION> at <COMPANY_NAME>. Along with this letter, I have attached my current resume for your review. As a recent university graduate with multiple work terms of experience in the IT industry, I am more than confident that I have the skills to become a valuable, hardworking asset to your company.
+
+My education at the University of Guelph (Bachelor of Computing) was highly centred around both the object oriented paradigm, as well as the fundamental principles used to develop (and debug) code from the ground up; the main languages with which we were taught this were Java, Python, and C. Between my internship experiences and personal endeavors, I have developed these existing skills - while gaining many more - and I know that I would make a very valuable and productive member of your team.
+
+I very much appreciate your taking the time to consider myself for a position. If you have any questions at all, please call me at (905) 898-1760. I look forward to hearing from you soon.
+
+Sincerely,
+
+
+Andrew Raisbeck

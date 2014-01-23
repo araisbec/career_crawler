@@ -1,0 +1,2821 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head style="color:#14f403; font-style:bold;">
+    <meta style="color:#14f403; font-style:bold;" http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript">
+		function changeView(divClass, chkbox) {
+			var divsToHide = document.getElementsByClassName(divClass);
+			if (document.getElementById(chkbox).checked) {
+				for(var i = 0; i < divsToHide.length; i++) {
+					divsToHide[i].style.display="block";
+				}
+			} else {
+				for(var i = 0; i < divsToHide.length; i++) {
+					divsToHide[i].style.display="none";
+				}
+			}
+		}</script>
+  </head>
+  <body style="background-color:#000000;">
+    <div style="background-color:#FFF;" id="ControlDiv">
+      <p style="color:#000000;">Show/Hide Output Below:</p>
+      <input style="color:#000000;" type="checkbox" name="checkbox1" id="checkbox1" checked="checked" onclick="changeView('stdout', 'checkbox1')">stdout</input>
+      <input style="color:#000000;" type="checkbox" name="checkbox3" id="checkbox3" checked="checked" onclick="changeView('worker', 'checkbox3')">worker</input>
+      <input style="color:#000000;" type="checkbox" name="checkbox5" id="checkbox5" checked="checked" onclick="changeView('stderr', 'checkbox5')">stderr</input>
+      <input style="color:#000000;" type="checkbox" name="checkbox6" id="checkbox6" checked="checked" onclick="changeView('main', 'checkbox6')">main</input>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Found previous application history data! loading into memory...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: No previous application history data found... skipping load.</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Initializing...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Worker thread initialized!</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Initialization Complete!</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Run() method has been called...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: LOGIN action commencing...</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: send:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'GET /Login/SignIn HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: login.monster.ca\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\n\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: reply:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'HTTP/1.1 200 OK\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Cache-Control: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Pragma: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Type: text/html; charset=utf-8&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Expires: -1&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Server: Microsoft-IIS/7.5&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Mww-Version: 2014.1.10.3-323&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ASP.NET_SessionId=5dq2mznubfgiu5wqa2lkl10v; path=/; HttpOnly&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNetMvc-Version: 3.0&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNet-Version: 4.0.30319&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Head=; expires=Tue, 24-Dec-2013 16:25:23 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Top=; expires=Tue, 24-Dec-2013 16:25:23 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: split_scsjsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:23 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: scsjsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:23 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: split_ssljsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:23 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ssljsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:23 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: scsjsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:23 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ssljsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:23 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: atmResolver=|Seeker|login|13|30|; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: uslc=1; domain=.monster.ca; expires=Thu, 30-Jan-2014 16:25:23 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Bottom=; expires=Tue, 24-Dec-2013 16:25:23 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Powered-By: ASP.NET&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP=CAO DSP COR CURa ADMa DEVa TAIa IVAa IVDa CONo HISa TELo PSAa PSDa DELa UNRa PUBi OTRa BUS LEG PHY ONL UNI PUR COM NAV INT DEM CNT STA HEA PRE GOV OTC&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Date: Thu, 23 Jan 2014 16:25:22 GMT&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Length: 95159&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Connection: close&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Vary: Accept-Encoding&#13;
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: TEST1</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: send:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'POST /Login/SignIn HTTP/1.1\r\nAccept-Encoding: identity\r\nContent-Length: 612\r\nCookie2: $Version="1"\r\nHost: login.monster.ca\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\nConnection: close\r\nCookie: split_ssljsv=1; uslc=1; scsjsv=1; split_scsjsv=1; ssljsv=1; ASP.NET_SessionId=5dq2mznubfgiu5wqa2lkl10v; atmResolver=|Seeker|login|13|30|\r\nReferer: https://login.monster.ca/Login/SignIn\r\nContent-Type: application/x-www-form-urlencoded\r\n\r\nHeaderText=Sign+In&amp;ShowFacebookSignIn=True&amp;ShowChinaRelatedContent=False&amp;FacebookSignInUrl=https%3A%2F%2Flogin.monster.ca%2FFBLandingPage.aspx%3Frurl%3Dhttp%253a%252f%252flogin.monster.ca%252fLogin%252fSignIn%26ch%3DCAEN%26re%3DfromFBC&amp;ForgotPasswordUrl=http%3A%2F%2Fmy.monster.ca%2FPassword%2FForgot%3Fr%3Dhttp%253a%252f%252flogin.monster.ca%252fLogin%252fSignIn&amp;ChinaRelatedContentUrl=&amp;ActionUrl=&amp;SignUpUrl=http%3A%2F%2Fmy.monster.ca%2FBecome-Member%2FCreate-Account%3FlandedFrom%3DSignIn&amp;AreCookiesEnabled=true&amp;EmailAddress=araisbec%40gmail.com&amp;Password=unkQRXen9&amp;PersistLogin=false&amp;FormWasSubmittedToken=True'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: reply:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'HTTP/1.1 302 Found\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Cache-Control: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Pragma: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Type: text/html; charset=utf-8&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Expires: -1&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Location: http://my.monster.ca&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Server: Microsoft-IIS/7.5&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Mww-Version: 2014.1.10.3-322&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNetMvc-Version: 3.0&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNet-Version: 4.0.30319&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: Global.Authentication.FormsAuthentication.Auth=4176C93A09CA227AC17FADA7A4DF795EEFE332A9E627847AC9929D2184BAC84E910FED0BCC7C0224901C00400D16E70671DB02A02E2B93E77AFBFE4246E5E8ED57BBACBB6C255BF8DE473AD927EA8F3D9750A10AEAF4D193FDDB63BD8BD84FAEED7258FD902BF9188EBDE473BDAFE3D0E0E5DD388F950A92BCB8A2B4F0E55A1EB932FF4B6D6C0CB92A0848FC6632287F6023937BB20CA1B8325638F8B55091774939399295E6408E80E67A4084EC0B7572E813EBBFA8989D77A2054BA810927F43DAC60663AA70C331482F7CD72598BA8509E29EB93B3DD2C684CEA634F0B2F08BEECFF521F0D787E09FA0BF6246365FB8E5853CD63776296E80EF93D466003439ACB696B14DA6FCB15B82AB79ECA861EA1BCAAB37180C52617CD6395DFE85857B9D5EDC; domain=.monster.ca; path=/; HttpOnly&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: LAST_AUTHENTICATED_USER=10001081232C66C89EF5AD5AE86EFC1DD91FC644B795ACA5FE4B61A071DC5F8821BB22943F526625DBE146F815C826D4CAB4B7CCAE5BC20D929A8DBAA952E399E905EA782753331FBC45D461EA606A6031F00EA8810821BCF3C58E7BAD343D963E7868204D3EB7EA3E526EB581D768FFDC337F; domain=.monster.ca; expires=Mon, 24-Mar-2014 16:25:25 GMT; path=/; HttpOnly&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: 13_JSRadius=-1; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: atlaslt=1; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Powered-By: ASP.NET&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP=CAO DSP COR CURa ADMa DEVa TAIa IVAa IVDa CONo HISa TELo PSAa PSDa DELa UNRa PUBi OTRa BUS LEG PHY ONL UNI PUR COM NAV INT DEM CNT STA HEA PRE GOV OTC&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Date: Thu, 23 Jan 2014 16:25:24 GMT&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Length: 137&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Connection: close&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: send:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'GET / HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: my.monster.ca\r\nCookie2: $Version="1"\r\nCookie: split_ssljsv=1; split_scsjsv=1; 13_JSRadius=-1; ssljsv=1; Global.Authentication.FormsAuthentication.Auth=4176C93A09CA227AC17FADA7A4DF795EEFE332A9E627847AC9929D2184BAC84E910FED0BCC7C0224901C00400D16E70671DB02A02E2B93E77AFBFE4246E5E8ED57BBACBB6C255BF8DE473AD927EA8F3D9750A10AEAF4D193FDDB63BD8BD84FAEED7258FD902BF9188EBDE473BDAFE3D0E0E5DD388F950A92BCB8A2B4F0E55A1EB932FF4B6D6C0CB92A0848FC6632287F6023937BB20CA1B8325638F8B55091774939399295E6408E80E67A4084EC0B7572E813EBBFA8989D77A2054BA810927F43DAC60663AA70C331482F7CD72598BA8509E29EB93B3DD2C684CEA634F0B2F08BEECFF521F0D787E09FA0BF6246365FB8E5853CD63776296E80EF93D466003439ACB696B14DA6FCB15B82AB79ECA861EA1BCAAB37180C52617CD6395DFE85857B9D5EDC; LAST_AUTHENTICATED_USER=10001081232C66C89EF5AD5AE86EFC1DD91FC644B795ACA5FE4B61A071DC5F8821BB22943F526625DBE146F815C826D4CAB4B7CCAE5BC20D929A8DBAA952E399E905EA782753331FBC45D461EA606A6031F00EA8810821BCF3C58E7BAD343D963E7868204D3EB7EA3E526EB581D768FFDC337F; scsjsv=1; uslc=1\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\n\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: reply:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'HTTP/1.1 200 OK\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Cache-Control: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Pragma: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Type: text/html; charset=utf-8&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Expires: -1&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Server: Microsoft-IIS/7.5&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Mww-Version: 2014.1.10.3-312&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; expires=Wed, 22-Jan-2014 16:25:26 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ASP.NET_SessionId=nxm1bz4lqjac0gur54z3yyro; domain=.monster.ca; path=/; HttpOnly&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNetMvc-Version: 3.0&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNet-Version: 4.0.30319&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: UTD1=1eyJhZGRyIjpbeyJjaWQiOjMwLCJjbnQiOiJDQSIsImN0IjoiTmV3bWFya2V0IiwibGlkIjoyMzYsInBjIjoiTDNZOEE0Iiwic3QiOiJPTiIsInN0biI6Ik9udGFyaW8ifV0sImNsSWQiOjExLCJjdW5hbWUiOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCIsImVkdSI6W3siZWREaXNwbGF5IjoxNDAsImVkSWQiOjUsImZPZlMiOjM3LCJyZmlkIjoxNTc2ODczNSwic24iOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCJ9XSwiZm4iOiJBbmRyZXciLCJpZCI6MjI5MzIxNjc4LCJvY2MiOlt7Im9jY2lkIjoxMDEzOTV9LHsib2NjaWQiOjB9LHsib2NjaWQiOjEwMTYwNn0seyJvY2NpZCI6MTAxNjQ1fV19; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:26 GMT; path=/; HttpOnly&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: STD1=27L0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8ifvFH0+nyo0cfvcovimqZlekX62UxLVZZWbTX6Zfn6e9T1W9H6Zt5/tHoo2ndfvToe98ffZS/W9Ev9G61WGXL69u+X8w+enR/597ew/2D3d3RR4uqaet8mi8Jaluv818y8iE+Lei7Nj1d5vXFtX15/979nb2dB+HL51nZdN7+dnExT1+v8nyWfruavs07EO7fvxHCe4zo/u79hwd7+5EREa3OJ/I7NV7OhHw/3TL18PLewf2Ho4+WC+rwdXXeXmV1nj7NL/OyWuX1R8AIrXa0yfNqSgi9vm7afNGkr9erVVW36TFhSR/9UFrvPdg70Bee5s3btloNNz3YNbC/nZerFO1dIyJDubxwdKApXZ1PP3r0Kb5ZmCkZfdRMC8ax/empbfzpp/RBhd92dx882Mcbaway9/De3u6nDwjDq6yhb+lnW/PrVy2BvDf66JpZd+eX/D8BAAD//w==; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:26 GMT; path=/; HttpOnly&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: UsrCtx=1=M; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Head=; expires=Tue, 24-Dec-2013 16:25:26 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Top=; expires=Tue, 24-Dec-2013 16:25:26 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: scsjsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:26 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ssljsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:26 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: scsjsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:26 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ssljsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:26 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: atmResolver=|Seeker|my20|13|30|; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: uslc=3; domain=.monster.ca; expires=Thu, 30-Jan-2014 16:25:26 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Bottom=; expires=Tue, 24-Dec-2013 16:25:26 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Powered-By: ASP.NET&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP=CAO DSP COR CURa ADMa DEVa TAIa IVAa IVDa CONo HISa TELo PSAa PSDa DELa UNRa PUBi OTRa BUS LEG PHY ONL UNI PUR COM NAV INT DEM CNT STA HEA PRE GOV OTC&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Date: Thu, 23 Jan 2014 16:25:26 GMT&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Length: 108611&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Connection: close&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Vary: Accept-Encoding&#13;
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: TEST2</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Action complete!</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Run() method has been called...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: SEARCH action commencing...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Beginning Monster.py SEARCH routine...</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: send:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'GET /search/Help-Desk_5?q=&amp;where=Toronto HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: jobsearch.monster.ca\r\nCookie2: $Version="1"\r\nCookie: split_ssljsv=1; split_scsjsv=1; STD1=27L0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8ifvFH0+nyo0cfvcovimqZlekX62UxLVZZWbTX6Zfn6e9T1W9H6Zt5/tHoo2ndfvToe98ffZS/W9Ev9G61WGXL69u+X8w+enR/597ew/2D3d3RR4uqaet8mi8Jaluv818y8iE+Lei7Nj1d5vXFtX15/979nb2dB+HL51nZdN7+dnExT1+v8nyWfruavs07EO7fvxHCe4zo/u79hwd7+5EREa3OJ/I7NV7OhHw/3TL18PLewf2Ho4+WC+rwdXXeXmV1nj7NL/OyWuX1R8AIrXa0yfNqSgi9vm7afNGkr9erVVW36TFhSR/9UFrvPdg70Bee5s3btloNNz3YNbC/nZerFO1dIyJDubxwdKApXZ1PP3r0Kb5ZmCkZfdRMC8ax/empbfzpp/RBhd92dx882Mcbaway9/De3u6nDwjDq6yhb+lnW/PrVy2BvDf66JpZd+eX/D8BAAD//w==; 13_JSRadius=-1; ASP.NET_SessionId=nxm1bz4lqjac0gur54z3yyro; ssljsv=1; Global.Authentication.FormsAuthentication.Auth=4176C93A09CA227AC17FADA7A4DF795EEFE332A9E627847AC9929D2184BAC84E910FED0BCC7C0224901C00400D16E70671DB02A02E2B93E77AFBFE4246E5E8ED57BBACBB6C255BF8DE473AD927EA8F3D9750A10AEAF4D193FDDB63BD8BD84FAEED7258FD902BF9188EBDE473BDAFE3D0E0E5DD388F950A92BCB8A2B4F0E55A1EB932FF4B6D6C0CB92A0848FC6632287F6023937BB20CA1B8325638F8B55091774939399295E6408E80E67A4084EC0B7572E813EBBFA8989D77A2054BA810927F43DAC60663AA70C331482F7CD72598BA8509E29EB93B3DD2C684CEA634F0B2F08BEECFF521F0D787E09FA0BF6246365FB8E5853CD63776296E80EF93D466003439ACB696B14DA6FCB15B82AB79ECA861EA1BCAAB37180C52617CD6395DFE85857B9D5EDC; LAST_AUTHENTICATED_USER=10001081232C66C89EF5AD5AE86EFC1DD91FC644B795ACA5FE4B61A071DC5F8821BB22943F526625DBE146F815C826D4CAB4B7CCAE5BC20D929A8DBAA952E399E905EA782753331FBC45D461EA606A6031F00EA8810821BCF3C58E7BAD343D963E7868204D3EB7EA3E526EB581D768FFDC337F; UTD1=1eyJhZGRyIjpbeyJjaWQiOjMwLCJjbnQiOiJDQSIsImN0IjoiTmV3bWFya2V0IiwibGlkIjoyMzYsInBjIjoiTDNZOEE0Iiwic3QiOiJPTiIsInN0biI6Ik9udGFyaW8ifV0sImNsSWQiOjExLCJjdW5hbWUiOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCIsImVkdSI6W3siZWREaXNwbGF5IjoxNDAsImVkSWQiOjUsImZPZlMiOjM3LCJyZmlkIjoxNTc2ODczNSwic24iOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCJ9XSwiZm4iOiJBbmRyZXciLCJpZCI6MjI5MzIxNjc4LCJvY2MiOlt7Im9jY2lkIjoxMDEzOTV9LHsib2NjaWQiOjB9LHsib2NjaWQiOjEwMTYwNn0seyJvY2NpZCI6MTAxNjQ1fV19; UsrCtx=1=M; scsjsv=1; uslc=3\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\n\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: reply:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'HTTP/1.1 200 OK\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Cache-Control: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Pragma: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Type: text/html; charset=utf-8&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Expires: -1&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Server: Microsoft-IIS/7.5&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Mww-Version: 2013.9.70.80-326&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNet-Version: 4.0.30319&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; expires=Wed, 22-Jan-2014 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: 13_JSRadius=32; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: SortBy=rv.di.dt; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: jsResultsCount=tjt%3dHelp%2520Desk%26where%3dToronto%26tcount%3d8%26lcount%3d2; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: jsCrit=lid%3d224%26ispowersearch%3d1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: scsjsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: JSRTimeStamp=635260731293949856; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: NumberOfJSR=1; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: UsrCtx=1=M; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: uslc=3; domain=.monster.ca; expires=Thu, 30-Jan-2014 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ssljsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: scsjsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ssljsv=1; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: wtspc=5; domain=.monster.ca; expires=Sat, 22-Feb-2014 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Top=; expires=Tue, 24-Dec-2013 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Bottom=; expires=Tue, 24-Dec-2013 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Head=; expires=Tue, 24-Dec-2013 16:25:29 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: atmResolver=|Seeker|js20|13|30|; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Powered-By: ASP.NET&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP=CAO DSP COR CURa ADMa DEVa TAIa IVAa IVDa CONo HISa TELo PSAa PSDa DELa UNRa PUBi OTRa BUS LEG PHY ONL UNI PUR COM NAV INT DEM CNT STA HEA PRE GOV OTC&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Date: Thu, 23 Jan 2014 16:25:29 GMT&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Length: 195570&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Connection: close&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Vary: Accept-Encoding&#13;
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Found results! Extracting total...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Found results! Extracting total... a. Regex compiled...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Found results! Extracting total... b. Regex search completed... total matches: '('10',)'...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Found results! Extracting total... c. Total tasks: '10'...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Found results! Extracting total... d. Signal with total sent...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Extraction finished, and signal sent to main thread; continuing to processing stage...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Processing search results...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Action complete!</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Beginning to add search results to table...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Search job has been completed!</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: *********6**************
+
+
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Run() method has been called...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: PROFILE action commencing...</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: send:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'GET /Jr-Help-Desk-Specialist-Job-Toronto-ON-129100764.aspx HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: jobview.monster.ca\r\nCookie2: $Version="1"\r\nCookie: split_ssljsv=1; jsCrit=lid%3d224%26ispowersearch%3d1; split_scsjsv=1; STD1=27L0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8ifvFH0+nyo0cfvcovimqZlekX62UxLVZZWbTX6Zfn6e9T1W9H6Zt5/tHoo2ndfvToe98ffZS/W9Ev9G61WGXL69u+X8w+enR/597ew/2D3d3RR4uqaet8mi8Jaluv818y8iE+Lei7Nj1d5vXFtX15/979nb2dB+HL51nZdN7+dnExT1+v8nyWfruavs07EO7fvxHCe4zo/u79hwd7+5EREa3OJ/I7NV7OhHw/3TL18PLewf2Ho4+WC+rwdXXeXmV1nj7NL/OyWuX1R8AIrXa0yfNqSgi9vm7afNGkr9erVVW36TFhSR/9UFrvPdg70Bee5s3btloNNz3YNbC/nZerFO1dIyJDubxwdKApXZ1PP3r0Kb5ZmCkZfdRMC8ax/empbfzpp/RBhd92dx882Mcbaway9/De3u6nDwjDq6yhb+lnW/PrVy2BvDf66JpZd+eX/D8BAAD//w==; 13_JSRadius=32; ASP.NET_SessionId=nxm1bz4lqjac0gur54z3yyro; ssljsv=1; Global.Authentication.FormsAuthentication.Auth=4176C93A09CA227AC17FADA7A4DF795EEFE332A9E627847AC9929D2184BAC84E910FED0BCC7C0224901C00400D16E70671DB02A02E2B93E77AFBFE4246E5E8ED57BBACBB6C255BF8DE473AD927EA8F3D9750A10AEAF4D193FDDB63BD8BD84FAEED7258FD902BF9188EBDE473BDAFE3D0E0E5DD388F950A92BCB8A2B4F0E55A1EB932FF4B6D6C0CB92A0848FC6632287F6023937BB20CA1B8325638F8B55091774939399295E6408E80E67A4084EC0B7572E813EBBFA8989D77A2054BA810927F43DAC60663AA70C331482F7CD72598BA8509E29EB93B3DD2C684CEA634F0B2F08BEECFF521F0D787E09FA0BF6246365FB8E5853CD63776296E80EF93D466003439ACB696B14DA6FCB15B82AB79ECA861EA1BCAAB37180C52617CD6395DFE85857B9D5EDC; NumberOfJSR=1; JSRTimeStamp=635260731293949856; jsResultsCount=tjt%3dHelp%2520Desk%26where%3dToronto%26tcount%3d8%26lcount%3d2; SortBy=rv.di.dt; wtspc=5; LAST_AUTHENTICATED_USER=10001081232C66C89EF5AD5AE86EFC1DD91FC644B795ACA5FE4B61A071DC5F8821BB22943F526625DBE146F815C826D4CAB4B7CCAE5BC20D929A8DBAA952E399E905EA782753331FBC45D461EA606A6031F00EA8810821BCF3C58E7BAD343D963E7868204D3EB7EA3E526EB581D768FFDC337F; UTD1=1eyJhZGRyIjpbeyJjaWQiOjMwLCJjbnQiOiJDQSIsImN0IjoiTmV3bWFya2V0IiwibGlkIjoyMzYsInBjIjoiTDNZOEE0Iiwic3QiOiJPTiIsInN0biI6Ik9udGFyaW8ifV0sImNsSWQiOjExLCJjdW5hbWUiOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCIsImVkdSI6W3siZWREaXNwbGF5IjoxNDAsImVkSWQiOjUsImZPZlMiOjM3LCJyZmlkIjoxNTc2ODczNSwic24iOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCJ9XSwiZm4iOiJBbmRyZXciLCJpZCI6MjI5MzIxNjc4LCJvY2MiOlt7Im9jY2lkIjoxMDEzOTV9LHsib2NjaWQiOjB9LHsib2NjaWQiOjEwMTYwNn0seyJvY2NpZCI6MTAxNjQ1fV19; UsrCtx=1=M; scsjsv=1; uslc=3\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\n\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Row being changed to a user-specified style</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: reply:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'HTTP/1.1 200 OK\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Cache-Control: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Pragma: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Type: text/html; charset=utf-8&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Expires: -1&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Server: Microsoft-IIS/7.5&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Mww-Version: 2013.9.60.72-228&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; expires=Wed, 22-Jan-2014 16:25:32 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTR STP IND DEM"&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNet-Version: 4.0.30319&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Top=; expires=Tue, 24-Dec-2013 16:25:32 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Bottom=; expires=Tue, 24-Dec-2013 16:25:32 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Head=; expires=Tue, 24-Dec-2013 16:25:32 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: jvinf=129100764|660.11774,660.11882; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:32 GMT; path=/; HttpOnly&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: JSRTimeStamp=635260731293949856; domain=.monster.ca; expires=Wed, 22-Jan-2014 16:25:32 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: NumberOfJSR=1; domain=.monster.ca; expires=Wed, 22-Jan-2014 16:25:32 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: abTempSplitJobTitles=129100764-Jr.+Help+Desk+Specialist; domain=.monster.ca; expires=Sat, 22-Feb-2014 16:25:32 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: jsCrit=lid%3d224%26ispowersearch%3d1%26jobviewocc%3d660.11774%2c660.11882; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:32 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ApplyCtx=35=&amp;48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d129100764&amp;59=&amp;50=&amp;51=&amp;52=&amp;56=; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: atmResolver=|Seeker|jobview|13|30|; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Powered-By: ASP.NET&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP=CAO DSP COR CURa ADMa DEVa TAIa IVAa IVDa CONo HISa TELo PSAa PSDa DELa UNRa PUBi OTRa BUS LEG PHY ONL UNI PUR COM NAV INT DEM CNT STA HEA PRE GOV OTC&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Date: Thu, 23 Jan 2014 16:25:32 GMT&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Length: 66817&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Connection: close&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Vary: Accept-Encoding&#13;
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Beginning profiling of: http://jobview.monster.ca/Jr-Help-Desk-Specialist-Job-Toronto-ON-129100764.aspx...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Found job_id: 129100764!</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Found address: Toronto, ON M5V 2H1!</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Action complete!</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: SETTING [('Job ID', '129100764'), ('Job Address', 'Toronto, ON M5V 2H1')] FOR POSITION Jr. Help Desk Specialist
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: *********2**************
+
+
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Run() method has been called...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: PROFILE action commencing...</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: send:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'GET /Bilingual-CSR-Help-Desk-Job-Markham-ON-128870235.aspx HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: jobview.monster.ca\r\nCookie2: $Version="1"\r\nCookie: DOMAINALIAS=; atmResolver=|Seeker|jobview|13|30|; split_ssljsv=1; jsCrit=lid%3d224%26ispowersearch%3d1%26jobviewocc%3d660.11774%2c660.11882; ApplyCtx=35=&amp;48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d129100764&amp;59=&amp;50=&amp;51=&amp;52=&amp;56=; split_scsjsv=1; jvinf=129100764|660.11774,660.11882; STD1=27L0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8ifvFH0+nyo0cfvcovimqZlekX62UxLVZZWbTX6Zfn6e9T1W9H6Zt5/tHoo2ndfvToe98ffZS/W9Ev9G61WGXL69u+X8w+enR/597ew/2D3d3RR4uqaet8mi8Jaluv818y8iE+Lei7Nj1d5vXFtX15/979nb2dB+HL51nZdN7+dnExT1+v8nyWfruavs07EO7fvxHCe4zo/u79hwd7+5EREa3OJ/I7NV7OhHw/3TL18PLewf2Ho4+WC+rwdXXeXmV1nj7NL/OyWuX1R8AIrXa0yfNqSgi9vm7afNGkr9erVVW36TFhSR/9UFrvPdg70Bee5s3btloNNz3YNbC/nZerFO1dIyJDubxwdKApXZ1PP3r0Kb5ZmCkZfdRMC8ax/empbfzpp/RBhd92dx882Mcbaway9/De3u6nDwjDq6yhb+lnW/PrVy2BvDf66JpZd+eX/D8BAAD//w==; 13_JSRadius=32; ASP.NET_SessionId=nxm1bz4lqjac0gur54z3yyro; ssljsv=1; Global.Authentication.FormsAuthentication.Auth=4176C93A09CA227AC17FADA7A4DF795EEFE332A9E627847AC9929D2184BAC84E910FED0BCC7C0224901C00400D16E70671DB02A02E2B93E77AFBFE4246E5E8ED57BBACBB6C255BF8DE473AD927EA8F3D9750A10AEAF4D193FDDB63BD8BD84FAEED7258FD902BF9188EBDE473BDAFE3D0E0E5DD388F950A92BCB8A2B4F0E55A1EB932FF4B6D6C0CB92A0848FC6632287F6023937BB20CA1B8325638F8B55091774939399295E6408E80E67A4084EC0B7572E813EBBFA8989D77A2054BA810927F43DAC60663AA70C331482F7CD72598BA8509E29EB93B3DD2C684CEA634F0B2F08BEECFF521F0D787E09FA0BF6246365FB8E5853CD63776296E80EF93D466003439ACB696B14DA6FCB15B82AB79ECA861EA1BCAAB37180C52617CD6395DFE85857B9D5EDC; abTempSplitJobTitles=129100764-Jr.+Help+Desk+Specialist; jsResultsCount=tjt%3dHelp%2520Desk%26where%3dToronto%26tcount%3d8%26lcount%3d2; SortBy=rv.di.dt; wtspc=5; LAST_AUTHENTICATED_USER=10001081232C66C89EF5AD5AE86EFC1DD91FC644B795ACA5FE4B61A071DC5F8821BB22943F526625DBE146F815C826D4CAB4B7CCAE5BC20D929A8DBAA952E399E905EA782753331FBC45D461EA606A6031F00EA8810821BCF3C58E7BAD343D963E7868204D3EB7EA3E526EB581D768FFDC337F; UTD1=1eyJhZGRyIjpbeyJjaWQiOjMwLCJjbnQiOiJDQSIsImN0IjoiTmV3bWFya2V0IiwibGlkIjoyMzYsInBjIjoiTDNZOEE0Iiwic3QiOiJPTiIsInN0biI6Ik9udGFyaW8ifV0sImNsSWQiOjExLCJjdW5hbWUiOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCIsImVkdSI6W3siZWREaXNwbGF5IjoxNDAsImVkSWQiOjUsImZPZlMiOjM3LCJyZmlkIjoxNTc2ODczNSwic24iOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCJ9XSwiZm4iOiJBbmRyZXciLCJpZCI6MjI5MzIxNjc4LCJvY2MiOlt7Im9jY2lkIjoxMDEzOTV9LHsib2NjaWQiOjB9LHsib2NjaWQiOjEwMTYwNn0seyJvY2NpZCI6MTAxNjQ1fV19; UsrCtx=1=M; scsjsv=1; uslc=3\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\n\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: reply:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'HTTP/1.1 200 OK\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Cache-Control: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Pragma: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Type: text/html; charset=utf-8&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Expires: -1&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Server: Microsoft-IIS/7.5&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Mww-Version: 2013.9.60.72-202&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; expires=Wed, 22-Jan-2014 16:25:34 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTR STP IND DEM"&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNet-Version: 4.0.30319&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Top=; expires=Tue, 24-Dec-2013 16:25:34 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Bottom=; expires=Tue, 24-Dec-2013 16:25:34 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Head=; expires=Tue, 24-Dec-2013 16:25:34 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: jvinf=128870235|11.11892; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:34 GMT; path=/; HttpOnly&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: abTempSplitJobTitles=129100764-Jr.+Help+Desk+Specialist%5e128870235-Bilingual+CSR%2f+Help+Desk; domain=.monster.ca; expires=Sat, 22-Feb-2014 16:25:34 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: jsCrit=lid%3d224%26ispowersearch%3d1%26jobviewocc%3d11.11892; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:34 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ApplyCtx=48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d128870235; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: atmResolver=|Seeker|jobview|13|30|; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Powered-By: ASP.NET&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP=CAO DSP COR CURa ADMa DEVa TAIa IVAa IVDa CONo HISa TELo PSAa PSDa DELa UNRa PUBi OTRa BUS LEG PHY ONL UNI PUR COM NAV INT DEM CNT STA HEA PRE GOV OTC&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Date: Thu, 23 Jan 2014 16:25:33 GMT&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Length: 50301&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Connection: close&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Vary: Accept-Encoding&#13;
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Beginning profiling of: http://jobview.monster.ca/Bilingual-CSR-Help-Desk-Job-Markham-ON-128870235.aspx...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Found job_id: 128870235!</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Found address: Markham, ON!</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Action complete!</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: SETTING [('Job ID', '128870235'), ('Job Address', 'Markham, ON')] FOR POSITION Bilingual CSR/ Help Desk
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Row being changed to a user-specified style</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Checking row #1...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Checking row #2...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Checking row #3...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Row #3 has a set style! Preparing cover letter...</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Andrew Raisbeck&#13;
+363 Salisbury Lane&#13;
+Newmarket, Ontario&#13;
+L3Y8A4&#13;
+&#13;
+January 23, 2014&#13;
+Manpower&#13;
+Markham, ON&#13;
+Canada&#13;
+&#13;
+To Whom It May Concern:&#13;
+&#13;
+I would like to apply for the Bilingual CSR/ Help Desk position - as listed on Monster.ca - at Manpower. Along with this letter, I have attached my current resume for your review. As a recent university graduate with one year of work experience in the IT industry, I am more than confident that I have the skills to become a valuable, hardworking asset to your company.&#13;
+&#13;
+My education at the University of Guelph (Bachelor of Computing) was highly centered around both the object oriented paradigm, as well as the fundamental principles used to develop (and debug) code from the ground up; the main languages with which we were taught this were Java, Python, and C. I have also utilized these skills for web development (at High Speed Hockey), scripting, and full software development (at The Regional Municipality of York).&#13;
+&#13;
+I very much appreciate your taking the time to consider myself for a position. If you have any questions at all, please call me at (905) 898-1760. I look forward to hearing from you soon.&#13;
+&#13;
+Sincerely,&#13;
+&#13;
+&#13;
+Andrew Raisbeck&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Run() method has been called...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: APPLY action commencing...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Beginning 'applyForJob' task for posting with ID: 128870235</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: send:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'GET /Apply/Apply.aspx?JobID=128870235 HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: jobview.monster.ca\r\nCookie2: $Version="1"\r\nCookie: DOMAINALIAS=; atmResolver=|Seeker|jobview|13|30|; split_ssljsv=1; jsCrit=lid%3d224%26ispowersearch%3d1%26jobviewocc%3d11.11892; ApplyCtx=48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d128870235; split_scsjsv=1; jvinf=128870235|11.11892; STD1=27L0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8ifvFH0+nyo0cfvcovimqZlekX62UxLVZZWbTX6Zfn6e9T1W9H6Zt5/tHoo2ndfvToe98ffZS/W9Ev9G61WGXL69u+X8w+enR/597ew/2D3d3RR4uqaet8mi8Jaluv818y8iE+Lei7Nj1d5vXFtX15/979nb2dB+HL51nZdN7+dnExT1+v8nyWfruavs07EO7fvxHCe4zo/u79hwd7+5EREa3OJ/I7NV7OhHw/3TL18PLewf2Ho4+WC+rwdXXeXmV1nj7NL/OyWuX1R8AIrXa0yfNqSgi9vm7afNGkr9erVVW36TFhSR/9UFrvPdg70Bee5s3btloNNz3YNbC/nZerFO1dIyJDubxwdKApXZ1PP3r0Kb5ZmCkZfdRMC8ax/empbfzpp/RBhd92dx882Mcbaway9/De3u6nDwjDq6yhb+lnW/PrVy2BvDf66JpZd+eX/D8BAAD//w==; 13_JSRadius=32; ASP.NET_SessionId=nxm1bz4lqjac0gur54z3yyro; ssljsv=1; Global.Authentication.FormsAuthentication.Auth=4176C93A09CA227AC17FADA7A4DF795EEFE332A9E627847AC9929D2184BAC84E910FED0BCC7C0224901C00400D16E70671DB02A02E2B93E77AFBFE4246E5E8ED57BBACBB6C255BF8DE473AD927EA8F3D9750A10AEAF4D193FDDB63BD8BD84FAEED7258FD902BF9188EBDE473BDAFE3D0E0E5DD388F950A92BCB8A2B4F0E55A1EB932FF4B6D6C0CB92A0848FC6632287F6023937BB20CA1B8325638F8B55091774939399295E6408E80E67A4084EC0B7572E813EBBFA8989D77A2054BA810927F43DAC60663AA70C331482F7CD72598BA8509E29EB93B3DD2C684CEA634F0B2F08BEECFF521F0D787E09FA0BF6246365FB8E5853CD63776296E80EF93D466003439ACB696B14DA6FCB15B82AB79ECA861EA1BCAAB37180C52617CD6395DFE85857B9D5EDC; abTempSplitJobTitles=129100764-Jr.+Help+Desk+Specialist%5e128870235-Bilingual+CSR%2f+Help+Desk; jsResultsCount=tjt%3dHelp%2520Desk%26where%3dToronto%26tcount%3d8%26lcount%3d2; SortBy=rv.di.dt; wtspc=5; LAST_AUTHENTICATED_USER=10001081232C66C89EF5AD5AE86EFC1DD91FC644B795ACA5FE4B61A071DC5F8821BB22943F526625DBE146F815C826D4CAB4B7CCAE5BC20D929A8DBAA952E399E905EA782753331FBC45D461EA606A6031F00EA8810821BCF3C58E7BAD343D963E7868204D3EB7EA3E526EB581D768FFDC337F; UTD1=1eyJhZGRyIjpbeyJjaWQiOjMwLCJjbnQiOiJDQSIsImN0IjoiTmV3bWFya2V0IiwibGlkIjoyMzYsInBjIjoiTDNZOEE0Iiwic3QiOiJPTiIsInN0biI6Ik9udGFyaW8ifV0sImNsSWQiOjExLCJjdW5hbWUiOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCIsImVkdSI6W3siZWREaXNwbGF5IjoxNDAsImVkSWQiOjUsImZPZlMiOjM3LCJyZmlkIjoxNTc2ODczNSwic24iOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCJ9XSwiZm4iOiJBbmRyZXciLCJpZCI6MjI5MzIxNjc4LCJvY2MiOlt7Im9jY2lkIjoxMDEzOTV9LHsib2NjaWQiOjB9LHsib2NjaWQiOjEwMTYwNn0seyJvY2NpZCI6MTAxNjQ1fV19; UsrCtx=1=M; scsjsv=1; uslc=3\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\n\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: reply:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'HTTP/1.1 200 OK\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Cache-Control: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Pragma: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Type: text/html; charset=utf-8&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Expires: -1&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Server: Microsoft-IIS/7.5&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Mww-Version: 2013.9.60.72-214&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNet-Version: 4.0.30319&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; expires=Wed, 22-Jan-2014 16:25:43 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Top=; expires=Tue, 24-Dec-2013 16:25:44 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Bottom=; expires=Tue, 24-Dec-2013 16:25:44 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Head=; expires=Tue, 24-Dec-2013 16:25:44 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ApplyCtx=48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d128870235; expires=Wed, 22-Jan-2014 16:25:44 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ApplyCtx=1=128870235&amp;28=3&amp;29=4116&amp;30=4xy6e9w2j4tignan&amp;35=Bilingual+CSR%2f+Help+Desk&amp;48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d128870235&amp;59=11.11892&amp;50=&amp;51=Markham%2c+ON&amp;52=Manpower&amp;38=30&amp;56=&amp;65=165298497&amp;66=EAAQrXuZmYIUF5avSTEZs5tdZQ--&amp;67=1&amp;69=0_1_0; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: abc=; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: uslc=3; domain=.monster.ca; expires=Thu, 30-Jan-2014 16:25:44 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: atmResolver=|Seeker|jobview|13|30|; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Powered-By: ASP.NET&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP=CAO DSP COR CURa ADMa DEVa TAIa IVAa IVDa CONo HISa TELo PSAa PSDa DELa UNRa PUBi OTRa BUS LEG PHY ONL UNI PUR COM NAV INT DEM CNT STA HEA PRE GOV OTC&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Date: Thu, 23 Jan 2014 16:25:44 GMT&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Length: 92309&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Connection: close&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Vary: Accept-Encoding&#13;
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Got application page: http://jobview.monster.ca/Apply/Apply.aspx?JobID=128870235</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Setting input for job application...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Application does not have resume section...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Setting all input controls to non-readonly...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Data set! Sending application...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Action complete!</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Control back at main thread; checking application result...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Application success! continuing to next one...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Checking row #4...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Checking row #5...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Checking row #6...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Checking row #7...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Row #7 has a set style! Preparing cover letter...</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Andrew Raisbeck&#13;
+363 Salisbury Lane&#13;
+Newmarket, Ontario&#13;
+L3Y8A4&#13;
+&#13;
+January 23, 2014&#13;
+Leonardo&#13;
+Toronto, ON&#13;
+Canada&#13;
+&#13;
+To Whom It May Concern:&#13;
+&#13;
+I would like to apply for the Jr. Help Desk Specialist position - as listed on Monster.ca - at Leonardo. Along with this letter, I have attached my current resume for your review. As a recent university graduate with one year of work experience in the IT industry, I am more than confident that I have the skills to become a valuable, hardworking asset to your company.&#13;
+&#13;
+My education at the University of Guelph (Bachelor of Computing) was highly centered around both the object oriented paradigm, as well as the fundamental principles used to develop (and debug) code from the ground up; the main languages with which we were taught this were Java, Python, and C. I have also utilized these skills for web development (at High Speed Hockey), scripting, and full software development (at The Regional Municipality of York).&#13;
+&#13;
+I very much appreciate your taking the time to consider myself for a position. If you have any questions at all, please call me at (905) 898-1760. I look forward to hearing from you soon.&#13;
+&#13;
+Sincerely,&#13;
+&#13;
+&#13;
+Andrew Raisbeck&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Run() method has been called...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: APPLY action commencing...</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: send:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'GET /Jr-Help-Desk-Specialist-Job-Toronto-ON-129100764.aspx HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: jobview.monster.ca\r\nCookie2: $Version="1"\r\nCookie: DOMAINALIAS=; atmResolver=|Seeker|jobview|13|30|; abc=; split_ssljsv=1; jsCrit=lid%3d224%26ispowersearch%3d1%26jobviewocc%3d11.11892; ApplyCtx=1=128870235&amp;28=3&amp;29=4116&amp;30=4xy6e9w2j4tignan&amp;35=Bilingual+CSR%2f+Help+Desk&amp;48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d128870235&amp;59=11.11892&amp;50=&amp;51=Markham%2c+ON&amp;52=Manpower&amp;38=30&amp;56=&amp;65=165298497&amp;66=EAAQrXuZmYIUF5avSTEZs5tdZQ--&amp;67=1&amp;69=0_1_0; split_scsjsv=1; jvinf=128870235|11.11892; STD1=27L0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8ifvFH0+nyo0cfvcovimqZlekX62UxLVZZWbTX6Zfn6e9T1W9H6Zt5/tHoo2ndfvToe98ffZS/W9Ev9G61WGXL69u+X8w+enR/597ew/2D3d3RR4uqaet8mi8Jaluv818y8iE+Lei7Nj1d5vXFtX15/979nb2dB+HL51nZdN7+dnExT1+v8nyWfruavs07EO7fvxHCe4zo/u79hwd7+5EREa3OJ/I7NV7OhHw/3TL18PLewf2Ho4+WC+rwdXXeXmV1nj7NL/OyWuX1R8AIrXa0yfNqSgi9vm7afNGkr9erVVW36TFhSR/9UFrvPdg70Bee5s3btloNNz3YNbC/nZerFO1dIyJDubxwdKApXZ1PP3r0Kb5ZmCkZfdRMC8ax/empbfzpp/RBhd92dx882Mcbaway9/De3u6nDwjDq6yhb+lnW/PrVy2BvDf66JpZd+eX/D8BAAD//w==; 13_JSRadius=32; ASP.NET_SessionId=nxm1bz4lqjac0gur54z3yyro; ssljsv=1; Global.Authentication.FormsAuthentication.Auth=4176C93A09CA227AC17FADA7A4DF795EEFE332A9E627847AC9929D2184BAC84E910FED0BCC7C0224901C00400D16E70671DB02A02E2B93E77AFBFE4246E5E8ED57BBACBB6C255BF8DE473AD927EA8F3D9750A10AEAF4D193FDDB63BD8BD84FAEED7258FD902BF9188EBDE473BDAFE3D0E0E5DD388F950A92BCB8A2B4F0E55A1EB932FF4B6D6C0CB92A0848FC6632287F6023937BB20CA1B8325638F8B55091774939399295E6408E80E67A4084EC0B7572E813EBBFA8989D77A2054BA810927F43DAC60663AA70C331482F7CD72598BA8509E29EB93B3DD2C684CEA634F0B2F08BEECFF521F0D787E09FA0BF6246365FB8E5853CD63776296E80EF93D466003439ACB696B14DA6FCB15B82AB79ECA861EA1BCAAB37180C52617CD6395DFE85857B9D5EDC; abTempSplitJobTitles=129100764-Jr.+Help+Desk+Specialist%5e128870235-Bilingual+CSR%2f+Help+Desk; jsResultsCount=tjt%3dHelp%2520Desk%26where%3dToronto%26tcount%3d8%26lcount%3d2; SortBy=rv.di.dt; wtspc=5; LAST_AUTHENTICATED_USER=10001081232C66C89EF5AD5AE86EFC1DD91FC644B795ACA5FE4B61A071DC5F8821BB22943F526625DBE146F815C826D4CAB4B7CCAE5BC20D929A8DBAA952E399E905EA782753331FBC45D461EA606A6031F00EA8810821BCF3C58E7BAD343D963E7868204D3EB7EA3E526EB581D768FFDC337F; UTD1=1eyJhZGRyIjpbeyJjaWQiOjMwLCJjbnQiOiJDQSIsImN0IjoiTmV3bWFya2V0IiwibGlkIjoyMzYsInBjIjoiTDNZOEE0Iiwic3QiOiJPTiIsInN0biI6Ik9udGFyaW8ifV0sImNsSWQiOjExLCJjdW5hbWUiOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCIsImVkdSI6W3siZWREaXNwbGF5IjoxNDAsImVkSWQiOjUsImZPZlMiOjM3LCJyZmlkIjoxNTc2ODczNSwic24iOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCJ9XSwiZm4iOiJBbmRyZXciLCJpZCI6MjI5MzIxNjc4LCJvY2MiOlt7Im9jY2lkIjoxMDEzOTV9LHsib2NjaWQiOjB9LHsib2NjaWQiOjEwMTYwNn0seyJvY2NpZCI6MTAxNjQ1fV19; UsrCtx=1=M; scsjsv=1; uslc=3\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\n\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: reply:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'HTTP/1.1 200 OK\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Cache-Control: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Pragma: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Type: text/html; charset=utf-8&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Expires: -1&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Server: Microsoft-IIS/7.5&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Mww-Version: 2013.9.60.72-205&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; expires=Wed, 22-Jan-2014 16:25:45 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTR STP IND DEM"&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNet-Version: 4.0.30319&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Top=; expires=Tue, 24-Dec-2013 16:25:45 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Bottom=; expires=Tue, 24-Dec-2013 16:25:45 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Head=; expires=Tue, 24-Dec-2013 16:25:45 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: jvinf=129100764|660.11774,660.11882; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:45 GMT; path=/; HttpOnly&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: abTempSplitJobTitles=128870235-Bilingual+CSR%2f+Help+Desk%5e129100764-Jr.+Help+Desk+Specialist; domain=.monster.ca; expires=Sat, 22-Feb-2014 16:25:45 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: jsCrit=lid%3d224%26ispowersearch%3d1%26jobviewocc%3d660.11774%2c660.11882; domain=.monster.ca; expires=Fri, 23-Jan-2015 16:25:45 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ApplyCtx=1=128870235&amp;28=3&amp;29=4116&amp;30=4xy6e9w2j4tignan&amp;35=Bilingual+CSR%2f+Help+Desk&amp;48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d129100764&amp;59=11.11892&amp;51=Markham%2c+ON&amp;52=Manpower&amp;38=30&amp;65=165298497&amp;66=EAAQrXuZmYIUF5avSTEZs5tdZQ--&amp;67=1&amp;69=0_1_0; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: atmResolver=|Seeker|jobview|13|30|; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Powered-By: ASP.NET&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP=CAO DSP COR CURa ADMa DEVa TAIa IVAa IVDa CONo HISa TELo PSAa PSDa DELa UNRa PUBi OTRa BUS LEG PHY ONL UNI PUR COM NAV INT DEM CNT STA HEA PRE GOV OTC&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Date: Thu, 23 Jan 2014 16:25:45 GMT&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Length: 66734&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Connection: close&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Vary: Accept-Encoding&#13;
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Beginning 'applyForJob' task for posting with ID: 129100764</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: send:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'GET /Apply/Apply.aspx?JobID=129100764 HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: jobview.monster.ca\r\nCookie2: $Version="1"\r\nCookie: DOMAINALIAS=; atmResolver=|Seeker|jobview|13|30|; abc=; split_ssljsv=1; jsCrit=lid%3d224%26ispowersearch%3d1%26jobviewocc%3d660.11774%2c660.11882; ApplyCtx=1=128870235&amp;28=3&amp;29=4116&amp;30=4xy6e9w2j4tignan&amp;35=Bilingual+CSR%2f+Help+Desk&amp;48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d129100764&amp;59=11.11892&amp;51=Markham%2c+ON&amp;52=Manpower&amp;38=30&amp;65=165298497&amp;66=EAAQrXuZmYIUF5avSTEZs5tdZQ--&amp;67=1&amp;69=0_1_0; split_scsjsv=1; jvinf=129100764|660.11774,660.11882; STD1=27L0HYBxJliUmL23Ke39K9UrX4HShCIBgEyTYkEAQ7MGIzeaS7B1pRyMpqyqBymVWZV1mFkDM7Z28995777333nvvvfe6O51OJ/ff/z9cZmQBbPbOStrJniGAqsgfP358Hz8ifvFH0+nyo0cfvcovimqZlekX62UxLVZZWbTX6Zfn6e9T1W9H6Zt5/tHoo2ndfvToe98ffZS/W9Ev9G61WGXL69u+X8w+enR/597ew/2D3d3RR4uqaet8mi8Jaluv818y8iE+Lei7Nj1d5vXFtX15/979nb2dB+HL51nZdN7+dnExT1+v8nyWfruavs07EO7fvxHCe4zo/u79hwd7+5EREa3OJ/I7NV7OhHw/3TL18PLewf2Ho4+WC+rwdXXeXmV1nj7NL/OyWuX1R8AIrXa0yfNqSgi9vm7afNGkr9erVVW36TFhSR/9UFrvPdg70Bee5s3btloNNz3YNbC/nZerFO1dIyJDubxwdKApXZ1PP3r0Kb5ZmCkZfdRMC8ax/empbfzpp/RBhd92dx882Mcbaway9/De3u6nDwjDq6yhb+lnW/PrVy2BvDf66JpZd+eX/D8BAAD//w==; 13_JSRadius=32; ASP.NET_SessionId=nxm1bz4lqjac0gur54z3yyro; ssljsv=1; Global.Authentication.FormsAuthentication.Auth=4176C93A09CA227AC17FADA7A4DF795EEFE332A9E627847AC9929D2184BAC84E910FED0BCC7C0224901C00400D16E70671DB02A02E2B93E77AFBFE4246E5E8ED57BBACBB6C255BF8DE473AD927EA8F3D9750A10AEAF4D193FDDB63BD8BD84FAEED7258FD902BF9188EBDE473BDAFE3D0E0E5DD388F950A92BCB8A2B4F0E55A1EB932FF4B6D6C0CB92A0848FC6632287F6023937BB20CA1B8325638F8B55091774939399295E6408E80E67A4084EC0B7572E813EBBFA8989D77A2054BA810927F43DAC60663AA70C331482F7CD72598BA8509E29EB93B3DD2C684CEA634F0B2F08BEECFF521F0D787E09FA0BF6246365FB8E5853CD63776296E80EF93D466003439ACB696B14DA6FCB15B82AB79ECA861EA1BCAAB37180C52617CD6395DFE85857B9D5EDC; abTempSplitJobTitles=128870235-Bilingual+CSR%2f+Help+Desk%5e129100764-Jr.+Help+Desk+Specialist; jsResultsCount=tjt%3dHelp%2520Desk%26where%3dToronto%26tcount%3d8%26lcount%3d2; SortBy=rv.di.dt; wtspc=5; LAST_AUTHENTICATED_USER=10001081232C66C89EF5AD5AE86EFC1DD91FC644B795ACA5FE4B61A071DC5F8821BB22943F526625DBE146F815C826D4CAB4B7CCAE5BC20D929A8DBAA952E399E905EA782753331FBC45D461EA606A6031F00EA8810821BCF3C58E7BAD343D963E7868204D3EB7EA3E526EB581D768FFDC337F; UTD1=1eyJhZGRyIjpbeyJjaWQiOjMwLCJjbnQiOiJDQSIsImN0IjoiTmV3bWFya2V0IiwibGlkIjoyMzYsInBjIjoiTDNZOEE0Iiwic3QiOiJPTiIsInN0biI6Ik9udGFyaW8ifV0sImNsSWQiOjExLCJjdW5hbWUiOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCIsImVkdSI6W3siZWREaXNwbGF5IjoxNDAsImVkSWQiOjUsImZPZlMiOjM3LCJyZmlkIjoxNTc2ODczNSwic24iOiJVbml2ZXJzaXR5IG9mIEd1ZWxwaCJ9XSwiZm4iOiJBbmRyZXciLCJpZCI6MjI5MzIxNjc4LCJvY2MiOlt7Im9jY2lkIjoxMDEzOTV9LHsib2NjaWQiOjB9LHsib2NjaWQiOjEwMTYwNn0seyJvY2NpZCI6MTAxNjQ1fV19; UsrCtx=1=M; scsjsv=1; uslc=3\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\n\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: reply:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 'HTTP/1.1 200 OK\r\n'</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: 
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Cache-Control: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Pragma: no-cache&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Type: text/html; charset=utf-8&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Expires: -1&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Server: Microsoft-IIS/7.5&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Mww-Version: 2013.9.60.72-222&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-AspNet-Version: 4.0.30319&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: DOMAINALIAS=; expires=Wed, 22-Jan-2014 16:25:47 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Top=; expires=Tue, 24-Dec-2013 16:25:47 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Bottom=; expires=Tue, 24-Dec-2013 16:25:47 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: TC_Head=; expires=Tue, 24-Dec-2013 16:25:47 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ApplyCtx=1=128870235&amp;28=3&amp;29=4116&amp;30=4xy6e9w2j4tignan&amp;35=Bilingual+CSR%2f+Help+Desk&amp;48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d129100764&amp;59=11.11892&amp;51=Markham%2c+ON&amp;52=Manpower&amp;38=30&amp;65=165298497&amp;66=EAAQrXuZmYIUF5avSTEZs5tdZQ--&amp;67=1&amp;69=0_1_0; expires=Wed, 22-Jan-2014 16:25:47 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: ApplyCtx=1=129100764&amp;28=1&amp;30=4xy6e9w2j4tignan&amp;35=Jr.+Help+Desk+Specialist&amp;48=http%3a%2f%2fjobsearch.monster.ca%2f&amp;49=%2fGetJob.aspx%3fJobID%3d129100764&amp;59=660.11774%2c660.11882&amp;50=&amp;51=Toronto%2c+ON+M5V+2H1&amp;52=Leonardo&amp;56=&amp;65=165541275&amp;66=EAAQrXuZmYIUF5avSTEZs5tdZQ--&amp;69=0_0_0; domain=.monster.ca; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: abc=; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: uslc=3; domain=.monster.ca; expires=Thu, 30-Jan-2014 16:25:47 GMT; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Set-Cookie: atmResolver=|Seeker|jobview|13|30|; path=/&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: X-Powered-By: ASP.NET&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: P3P: CP=CAO DSP COR CURa ADMa DEVa TAIa IVAa IVDa CONo HISa TELo PSAa PSDa DELa UNRa PUBi OTRa BUS LEG PHY ONL UNI PUR COM NAV INT DEM CNT STA HEA PRE GOV OTC&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Date: Thu, 23 Jan 2014 16:25:46 GMT&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Content-Length: 57415&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Connection: close&#13;
+</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: header:</p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] ::  </p>
+    </div>
+    <div class="stdout">
+      <p style="color:#FFF; font-style:bold;">[stdout] :: Vary: Accept-Encoding&#13;
+</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Got application page: http://jobview.monster.ca/Apply/Apply.aspx?JobID=129100764</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Setting input for job application...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Application has resume section...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Setting up resume upload...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Setting all input controls to non-readonly...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Data set! Sending application...</p>
+    </div>
+    <div class="worker">
+      <p style="color:#03f4e0; font-style:bold;">[worker] :: Action complete!</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Control back at main thread; checking application result...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Application success! continuing to next one...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Checking row #8...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Checking row #9...</p>
+    </div>
+    <div class="main">
+      <p style="color:#14f403; font-style:bold;">[main] :: Checking row #10...</p>
+    </div>
+  </body>
+</html>
